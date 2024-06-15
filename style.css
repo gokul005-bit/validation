@@ -1,0 +1,209 @@
+*{
+    
+    border:0;
+    margin:0;
+    
+}
+body{
+    background-color: #FFFEFE;
+    font-family: sans-serif;
+}
+/*navbar elements*/
+
+nav{
+    display:flex;
+    padding:5px;
+    box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
+
+}
+
+
+
+.logo{
+    display:inline;
+
+}
+.elem-list {
+display:inline-flex;
+width:100%;
+margin-left: 370px;
+margin-top:12px;
+
+
+}
+.elem-list li{
+    display: inline;
+    margin-left:10px;
+    font-size:18px;
+    font-weight:500;
+        
+}
+.elem-list a{
+    text-decoration: none;
+    color:#737272;
+}
+
+
+
+ /*Login box elements*/
+
+
+ .loginbox{
+    
+    height:300px;
+    width:500px;
+    border:0px solid black;
+    margin-top:100px;
+    background-color: #EFEFEF;
+    
+ }
+ .logtxt{
+    position:relative;
+    font-weight: 300px;
+    font-size: 24px;
+    top:20px;
+
+ }
+ .mailid,.password{
+    display:block;
+ }
+ .loginbox input{
+    margin-top:30px;
+    height:30px;
+    width:300px;
+    font-size:20px;
+    color: #737272;
+ }
+ .loginbox button{
+    height:40px;
+    width:150px;
+    color:#FAF7F7;
+    background-color: #000000;
+    border-radius: 8px;
+    position:relative;
+    top:20px;
+    display:block;
+ }
+.loginbox a{
+    position:relative;
+    top:40px;
+    color:black;
+}
+.login-page p{
+    position:relative;
+    top:15px;
+    color:red;
+}
+
+
+/* Loginbox error elements*/
+
+.heading{
+    font-size: 24px;
+    position:relative;
+    top:10px
+
+    
+
+}
+.error-page h5{
+    margin-top:30px;
+    max-width: 350px;
+}
+.error-page input{
+    display:block;
+    margin-top:30px
+}
+.error-page a{
+    color:black;
+}
+.error-page p{
+    color:red;
+    position:relative;
+    top:15px;
+}
+.login-page{
+    justify-content: center;
+}
+.error-page{
+    justify-content: center;
+}
+
+/*side navbar styles*/
+
+
+#checkbox{
+    font-size: 30px;
+    font-weight:600;
+    position:relative;
+    left:90%;
+    background: none;
+    z-index:2;
+    display:none;
+    color:black;
+    
+}
+#closebtn{
+    font-size: 20px;
+    font-weight:100;
+    position:relative;
+    left:90%;
+    background: none;
+    z-index:2;
+    display:none;
+    color:black;
+    
+}
+
+
+    /* writing a media query for the responsive screen sizes*/
+
+
+@media (max-width: 850px){
+    .loginbox{
+        width:250px;
+        height:350px;
+
+    }
+    body{
+        justify-content:left;
+    }
+    .elem-list{
+        display:none;
+    }
+    .loginbox input{
+        width:200px;
+    }
+    #checkbox{
+        display:block;
+    }
+    
+    .loginbox input{
+        font: size 15px;
+    }
+    .side-icons{
+        height:450px;
+        width:100%;
+        display:flex;
+        position:relative;
+        bottom:450px;
+        background-color: #737272;
+        justify-content: center;
+        display:none;
+        
+    }
+    .side-icons a{
+        display:block;
+        padding-top:50px ;
+        text-decoration: none;
+        color:#FFFEFE;
+    }
+}
+
+@media (min-width: 850px){
+    .side-icons a{
+        display:none;
+
+    }
+}
+
